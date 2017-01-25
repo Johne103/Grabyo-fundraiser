@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>GrabyoFundraiser</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/app.js" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="vcontainer">
+      <div class="hcontainer">
+        <h1>Fundraising campaign</h1>
+
+        <div class="meterContainer">
+          <div class="meterTotal">
+            <div class="meterReached"></div>
+              <p class="showDonations"> £<span id="ammountDonated"></span></p>
+          </div>
+        </div>
+
+        <div class="targetBox">
+          <p class="targetHeader">Target</p>
+          <form id="form_event">
+            <p class="currencyLabel">£<input class="targetInputBox" id="targetAmmount" value="100"></p>
+          </form>
+        </div>
+
+        <div class="donations">
+          <ul>
+            <p id="donationLeft">You need <strong>£<span id="ammountOutstanding"></span></strong> more to reach your target</p>
+          </ul>
+        </div>
+
+        <div class="donationBtns">
+          <p class="buttonClick">Click on buttons to donate</p>
+          <button class="donate1">£1</button>
+          <button class="donate5">£5</button>
+          <button class="donate10">£10</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
